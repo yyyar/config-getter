@@ -1,0 +1,42 @@
+{
+  "name": "config-getter",
+  "version": "0.0.1",
+  "description": "JSON config reader with file & env variable overrides",
+  "author": {
+    "name": "Yaroslav Pogrebnyak",
+    "url": "http://pogrebnyak.info",
+    "email": "yyyaroslav@gmail.com"
+  },
+  "homepage": "http://github.com/yyyar/config-getter",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yyyar/config-getter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yyyar/config-getter/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.12"
+  },
+  "keywords": [
+    "config",
+    "json",
+    "configuration",
+    "settings",
+    "properties",
+    "env",
+    "configurer",
+    "override"
+  ],
+  "scripts": {
+    "test": "nodeunit tests --reporter verbose"
+  },
+  "dependencies": {
+    "dotty": "0.0.2",
+    "lodash": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodeunit": "^0.9.0"
+  }
+}
