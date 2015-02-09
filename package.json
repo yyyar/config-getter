@@ -1,6 +1,6 @@
 {
   "name": "config-getter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JSON config reader with file & env variable overrides",
   "author": {
     "name": "Yaroslav Pogrebnyak",
@@ -29,6 +29,7 @@
     "configurer",
     "override"
   ],
+  "main": "./lib",
   "scripts": {
     "test": "nodeunit tests --reporter verbose"
   },
