@@ -11,7 +11,7 @@ $ npm install config-getter
 
 ### Usage
 
-default.js
+`default.js`
 ```javascript
 module.exports = {
     "db": {
@@ -21,7 +21,7 @@ module.exports = {
 }
 ```
 
-overrides.json
+`overrides.json`
 ```javascript
 {
     "db": {
@@ -30,7 +30,7 @@ overrides.json
 }
 ```
 
-app.js
+`app.js`
 ```javascript
 var getConfig = require('config-getter').getConfig;
 
@@ -39,17 +39,17 @@ console.log(config);
 ```
 
 Simple config loading
-```
+```bash
 $ node app.js
 ```
 
 Override config with overrides.json values
-```
+```bash
 $ CONFIG=./overrides.json node app.js
 ```
 
 Override config with overrides.json values and single key value
-```
+```bash
 $ CONFIG=./overrides.json CONFIG_db_port=7777 node app.js
 ```
 
