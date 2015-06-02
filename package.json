@@ -1,7 +1,7 @@
 {
   "name": "config-getter",
-  "version": "0.0.2",
-  "description": "JSON config reader with file & env variable overrides",
+  "version": "0.0.3",
+  "description": "JSON config reader with file & env variable overrides and placeholders!",
   "author": {
     "name": "Yaroslav Pogrebnyak",
     "url": "http://pogrebnyak.info",

@@ -1,3 +1,6 @@
 module.exports = {
-    hello: 'world'
+    hello: 'world',
+    some: {
+        object: 'be happy'
+    }
 }

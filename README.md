@@ -53,6 +53,19 @@ Override config with overrides.json values and single key value
 $ CONFIG=./overrides.json CONFIG_db_port=7777 node app.js
 ```
 
+### Placeholders
+It's possible to make a reference to previous defined value in some config string value:
+```json
+{
+   "who": "world",
+   "phrase": "hello, $(who)!"
+}
+```
+So phrase will become "hello, world!". It is possbile to make reference in inner objects too:
+```json
+"$(some.obj.value)"
+```
+
 #### Tests
 ```bash
 $ sudo npm install nodeunit -g

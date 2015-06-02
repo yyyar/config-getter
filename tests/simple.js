@@ -31,6 +31,14 @@ module.exports = {
         test.equal(config.hello, 'overrided', "Key overrided in config");
         test.equal(config.another.stuff, 'cool', "Key added in config from env variable");
         test.done();
+    },
+
+    'Placeholders work': function(test) {
+        process.env.CONFIG_PATH = __dirname + '/placeholders.json';
+
+        var config = getConfig(__dirname + '/default.js');
+        test.equal(config.phrase, config.some.object, "Placeholder works");
+        test.done();
     }
 
 };
