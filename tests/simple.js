@@ -39,6 +39,14 @@ module.exports = {
         var config = getConfig(__dirname + '/default.js');
         test.equal(config.phrase, config.some.object, "Placeholder works");
         test.done();
+    },
+
+    'Relative placeholders': function(test) {
+        process.env.CONFIG_PATH = null;
+          var config = getConfig(__dirname + '/relativePlaceholders.json');
+        test.equal(config.guys.person.phrase, "Hello, " + config.guys.person.name + " and " + config.guys.buddy.name,
+                "Placeholder works");
+        test.done();
     }
 
 };

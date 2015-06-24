@@ -66,6 +66,21 @@ So phrase will become "hello, world!". It is possbile to make reference in inner
 "$(some.obj.value)"
 ```
 
+Placeholders also may be relative. Currently the same level, and parent level are supported.
+```javascript
+{
+    "a": {
+        "a1": {
+            "name": "Vasya",
+            "phrase": "My name is $(.name)" // link to the same level var starts with single dot '.'
+       },
+       "a2": {
+           "name": "$(..a1.name)" // link to upper level var starts with two dots '..'
+       }
+    }
+}
+```
+
 #### Tests
 ```bash
 $ sudo npm install nodeunit -g

@@ -1,0 +1,12 @@
+{
+    "guys": {
+        "buddy": {
+            "name": "Petya"
+        },
+        "person": { 
+            "name": "Vasya",
+            "names": ["$(.name)"],
+            "phrase": "Hello, $(.name) and $(..buddy.name)"
+        }
+    }
+}
