@@ -1,3 +1,4 @@
 {
-    "phrase": "$(some.object)"
+    "phrase": "$(some.object)",
+    "phraseDuplicated": "$(some.object)$(some.object)"
 }

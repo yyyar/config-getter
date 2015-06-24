@@ -38,6 +38,7 @@ module.exports = {
 
         var config = getConfig(__dirname + '/default.js');
         test.equal(config.phrase, config.some.object, "Placeholder works");
+        test.equal(config.phraseDuplicated, config.some.object + config.some.object, "Duplicaterd placeholder works");
         test.done();
     },
 
