@@ -34,7 +34,10 @@ module.exports = {
 ```javascript
 var getConfig = require('config-getter').getConfig;
 
-var config = getConfig(__dirname + '/default.js');
+var config = getConfig(__dirname + '/default.js', {
+    /* optional parameters */
+    replaceArrays: false // if true, replaces arrays values, otherwise merge them
+});
 console.log(config);
 ```
 
