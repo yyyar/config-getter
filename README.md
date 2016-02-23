@@ -36,7 +36,15 @@ var getConfig = require('config-getter').getConfig;
 
 var config = getConfig(__dirname + '/default.js', {
     /* optional parameters */
-    replaceArrays: false // if true, replaces arrays values, otherwise merge them
+
+    // Name of env variables with path to extend default config file
+    configEnvVar: 'CONFIG_PATH',
+
+    // Prefix for replacing config variables from env vars
+    configEnvPrefix: 'CONFIG_',
+
+    // if true, replaces arrays values, otherwise merge them
+    replaceArrays: false 
 });
 console.log(config);
 ```
@@ -48,12 +56,12 @@ $ node app.js
 
 Override config with overrides.json values
 ```bash
-$ CONFIG=./overrides.json node app.js
+$ CONFIG_PATH=./overrides.json node app.js
 ```
 
 Override config with overrides.json values and single key value
 ```bash
-$ CONFIG=./overrides.json CONFIG_db_port=7777 node app.js
+$ CONFIG_PATH=./overrides.json CONFIG_db_port=7777 node app.js
 ```
 
 ### Placeholders
