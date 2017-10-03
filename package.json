@@ -1,7 +1,7 @@
 {
   "name": "config-getter",
-  "version": "0.0.7",
-  "description": "JSON config reader with file & env variable overrides and placeholders!",
+  "version": "0.1.0",
+  "description": "JSON config reader with different ways of variable overrides and placeholders!",
   "author": {
     "name": "Yaroslav Pogrebnyak",
     "url": "http://pogrebnyak.info",
@@ -17,11 +17,12 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">= 0.10.12"
+    "node": ">= 6.9.1"
   },
   "keywords": [
     "config",
     "json",
+    "consul",
     "configuration",
     "settings",
     "properties",
@@ -34,10 +35,11 @@
     "test": "nodeunit tests --reporter verbose"
   },
   "dependencies": {
-    "dotty": "0.0.2",
-    "lodash": "^3.1.0"
+    "consul": "^0.29.0",
+    "deasync": "^0.1.10",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "nodeunit": "^0.9.0"
+    "nodeunit": "^0.11.1"
   }
 }
