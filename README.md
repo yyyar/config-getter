@@ -37,6 +37,22 @@ module.exports = {
 ```
 
 `app.js`
+
+Using with import:
+```javascript
+
+// @ts-ignore
+import configGetter from 'config-getter';
+
+import defaultConfig from './default.js';
+
+export default configGetter.extendConfig(defaultConfig, {
+    // ... parameters ... //
+};
+```
+
+Old way:
+
 ```javascript
 const getConfig = require('config-getter').getConfig;
 
@@ -145,7 +161,7 @@ Placeholders also may be relative. Currently the same level, and parent level ar
 
 #### Tests
 ```bash
-$ sudo npm install nodeunit -g
+$ npm install
 $ npm test
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "config-getter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "JSON config reader with different ways of variable overrides and placeholders!",
   "author": {
     "name": "Yaroslav Pogrebnyak",
@@ -17,7 +17,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">= 6.9.1"
+    "node": ">= 18"
   },
   "keywords": [
     "config",
@@ -32,14 +32,14 @@
   ],
   "main": "./lib",
   "scripts": {
-    "test": "nodeunit tests --reporter verbose"
+    "test": "jest"
   },
   "dependencies": {
-    "consul": "^0.29.0",
-    "deasync": "^0.1.10",
-    "lodash": "^4.17.4"
+    "consul": "^1.2.0",
+    "deasync": "^0.1.30",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "nodeunit": "^0.11.1"
+    "jest": "^29.7.0"
   }
 }
