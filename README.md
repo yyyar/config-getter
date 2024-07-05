@@ -67,6 +67,9 @@ let config = getConfig(__dirname + '/default.js', {
 
     /* ----- optional parameters ----- */
 
+    // function to get log messages
+    log: console.log,
+
     // if true, replaces arrays values
     // If false, merge arrays
     replaceArrays: false,
